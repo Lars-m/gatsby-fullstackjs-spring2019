@@ -4,7 +4,7 @@ import linkExtractor from "./markdown-link-extractor";
 import Layout from "../components/layout.js";
 
 
-export default function createLinkPage(startTag,endTag,title){
+export default function createLinkPage(startTag,endTag,title,useLineBreaks){
 
   return ({ data }) => {
     let days = data.allMarkdownRemark.edges.filter(
@@ -21,9 +21,10 @@ export default function createLinkPage(startTag,endTag,title){
       if (start > -1 && end > -1 && end > start) {
         const exercises = rawMarkdownBody.substring(start, end);
         const links = linkExtractor(exercises);
+        const separator = useLineBreaks ? "<br/>" : " | "
         htmlLinks = links
           .map(l => `<a href=${l.href} target="_blank">${l.text}</a>`)
-          .join(", ");
+          .join(separator);
       }
       return {
         title: `${dateForTitle} - ${node.frontmatter.title}`,

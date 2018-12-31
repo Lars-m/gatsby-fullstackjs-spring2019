@@ -1,13 +1,24 @@
 ---
 period: "Period-3"
-title: "Bla Bla "
+title: "Geo-location and GeoJSON"
+date: "02-04-2019"
+pageintro: | 
+   A quick introduction Geo-location and GeoJSON 
 
-date: "12-04-2018"
+   How to use geospatial queries in MongoDB (using mongoose)
 ---
 
-### Using Geo-information on clients and servers
-#### Hello World
-#### Hello World
-#### Hello World
-#### Hello World
-<p>This is in a paragraph </p>
+### Before this lesson you should
+<!--readings_begin-->
+- [More than you ever wanted to know about GeoJSON (20 min.)](https://macwright.org/2015/03/23/geojson-second-bite)
+- Skim the sections in: [Geospatial Queries in MongoDB (15-20 min.)](https://docs.mongodb.com/manual/geospatial-queries/)
+<!--readings_end-->
+
+
+### Exercises
+<!--exercises_begin-->
+[Getting Started with GeoJSON](https://docs.google.com/document/d/1AmOU_c_ELEyn522X1j8rFnfUAt7u8fMpvH7t-KshS1s/edit?usp=sharing) (wee will do this together in the class, or at least get started)
+ <!--exercises_end-->
+
+### Slides
+[geoLocation - a very quick intro](https://docs.google.com/presentation/d/1vrHg25THjO3nar--glMoolsrVhzZRg4rc_khqdVn4sU/edit?usp=sharing)

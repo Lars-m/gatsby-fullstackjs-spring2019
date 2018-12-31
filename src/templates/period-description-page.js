@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 //import { node } from "prop-types";
 import all from "../helpers/periodLinks";
+import goals from "../../images/goals.png";
 
 const periodLinks = all.periodLinks;
 
@@ -20,8 +21,6 @@ function getDayInWeekFromDkDate(date) {
   ];
   return days[dayInWeek];
 }
-
-
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -51,7 +50,7 @@ export default ({ data }) => {
       </tr>
     );
   });
- 
+
   return (
     <Layout>
       <div>
@@ -61,14 +60,24 @@ export default ({ data }) => {
             borderRadius: 5,
             color: "white",
             padding: 16,
-            paddingTop: 1
+            paddingTop: 1,
+            paddingBottom: 0
           }}
         >
           <h1>{periodTitle}</h1>
           <div dangerouslySetInnerHTML={{ __html: periodInfoHtml }} />
-          <a href={post.frontmatter.learningGoals}>Learning Goals-{periodTitle}</a>
+          {/* <a href={post.frontmatter.learningGoals}>
+            Learning Goals-{periodTitle}
+          </a> */}
+          <a href={post.frontmatter.learningGoals} target="_blank">
+            <img style={{width:75}} src={goals} alt="Learning Goals-{periodTitle}" />
+          </a>
         </div>
-        {links.length > 0 && <table><tbody>{links}</tbody></table>}
+        {links.length > 0 && (
+          <table>
+            <tbody>{links}</tbody>
+          </table>
+        )}
       </div>
     </Layout>
   );
@@ -111,4 +120,3 @@ export const query = graphql`
     }
   }
 `;
-

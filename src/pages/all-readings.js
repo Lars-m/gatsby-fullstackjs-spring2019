@@ -2,7 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import createLinkPage from "../helpers/link_helper";
 
-export default createLinkPage("<!---readings_begin-->","<!---readings_end-->","All readings");
+
+export default createLinkPage("<!--readings_begin-->","<!--readings_end-->","All readings",true);
 
 export const query = graphql`
   query {

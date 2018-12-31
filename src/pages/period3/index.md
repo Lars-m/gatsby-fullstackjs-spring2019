@@ -1,8 +1,9 @@
 ---
-period: "Period-3"
-periodTitle: "Title for Period 3"
-title: "Title for Period 3"
-date: "18-11-2018"
+period: "Flow3"
+periodTitle: "Flow-3"
+learningGoals: "https://docs.google.com/document/d/12WHBIzeT0mh0ZWmwFKufTJFTdQy007sZich9XWApW48/edit"
 ---
 
-### En sub-header med beskrivelse af Period-3
+### Node.js+Express, Testing with JavaScript, NoSQL with MongoDB and Mongoose
+
+*In this period we will refresh our knowledge related to React Native, mainly focusing on geo-location features, Introduce GeoJSON, and how to use it with MongoDB, and continue with the mini project*

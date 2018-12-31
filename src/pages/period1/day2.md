@@ -1,11 +1,29 @@
 ---
 period: "Period-1"
-title: "Day-2, Basic JavaScript, Node, Babel "
-date: "21-04-2018"
+title: "Day-2, Vanilla JavaScript continued, Node, Babel "
+date: "12-02-2019"
+pageintro: |
+   Vanilla JavaScript Continued
+
+   NodeJs 
+
+   Modules and npm
+
+   Node’s Programming Model - the Event Loop
+
+   Node Streams
 ---
 
-### Using Geo-information on clients and servers
-#### Hello World
+### Before this lesson you should:
 
-<iframe style = "width:100%; height:900px"  src="https://docs.google.com/document/d/e/2PACX-1vTntMxCqUXYfOI09aqrlj2uYtR2_Fq9vojW8bru-q3zcXN08DYSQbQN_RLcFR70UZTyFVh3jAGK27PI/pub?embedded=true"></iframe>
-<p>This is in a paragraph </p>
+<!--readings_begin-->
+* Skim (the whole “book”, it’s short and clear (30 min.)) [Art of node](https://github.com/maxogden/art-of-node) 
+* Watch [Introduction to Node.js (12 min.) ](https://www.youtube.com/watch?v=GJmFG4ffJZU) 
+* NO MATTER WHAT, you MUST WATCH this this fantastic video: [The Event Loop (26 min.)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+<!--readings_end-->
+
+**Exercises:** 
+<!--exercises_begin-->
+Complete (as much as your time allows) the exercises from learnyournode, introduced day-1.
+ <!--exercises_end-->
+

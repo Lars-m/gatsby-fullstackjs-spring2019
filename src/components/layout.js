@@ -4,7 +4,7 @@ import "react-icons";
 import logo from "./bitmap.png";
 import { StaticQuery, Link, graphql } from "gatsby";
 
-
+import "../../images/css/font-awesome.css"
 import "../../style.css";
 import all from "../helpers/periodLinks";
 const linksForAllPeriods = all.linkFacade.getLinksForAllPeriods;
@@ -119,7 +119,10 @@ export default ({ children }) => (
                 Schedule
               </Link>
               <Link to={`/all-links`} activeClassName="active">
-                All Exercises
+                Exercises
+              </Link>
+              <Link to={`/all-readings`} activeClassName="active">
+                Read/watch
               </Link>
               <Link to={`/about/`} activeClassName="active">
                 About
