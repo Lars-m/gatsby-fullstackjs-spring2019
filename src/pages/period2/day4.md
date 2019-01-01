@@ -1,11 +1,11 @@
 ---
 title: "An introduction to NoSQL, MongoDB and Mongoose"
-period: "Period-2"
+period: "Flow-2"
 date: "19-03-2019"
 pageintro: | 
-   A quick intro to NoSQL. We will focus only on document database and more specifically use
+   A quick intro to NoSQL. We will focus only on document database and more specifically use.
 
-   MongoDB with Mongoose as a layer between your code and the DB (somehow similar to what you know with JPA)
+   MongoDB with Mongoose as a layer between your code and the DB (somehow similar to what you know with JPA).
 
 ---
 

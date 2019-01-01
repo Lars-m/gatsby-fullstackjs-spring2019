@@ -1,5 +1,5 @@
 ---
-period: "Period-1"
+period: "Flow-1"
 title: "Day-2, Vanilla JavaScript continued, Node, Babel "
 date: "12-02-2019"
 pageintro: |

@@ -1,9 +1,9 @@
 ---
 title: "Designing a Document Database"
-period: "Period-2"
+period: "Flow-2"
 date: "26-03-2019"
 pageintro: | 
-   MongoDB Schema Design
+   MongoDB Schema Design.
 
 
 ---

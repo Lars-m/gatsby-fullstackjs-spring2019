@@ -1,11 +1,11 @@
 ---
-period: "Period-3"
+period: "Flow-3"
 title: "Geo-location and GeoJSON"
 date: "02-04-2019"
 pageintro: | 
-   A quick introduction Geo-location and GeoJSON 
+   A quick introduction to Geo-location and GeoJSON. 
 
-   How to use geospatial queries in MongoDB (using mongoose)
+   How to use geospatial queries in MongoDB (using mongoose).
 ---
 
 ### Before this lesson you should

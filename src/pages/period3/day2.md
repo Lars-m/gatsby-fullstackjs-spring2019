@@ -1,9 +1,9 @@
 ---
-period: "Period-3"
+period: "Flow-3"
 title: "GeoJson and Geospatial Queries Continued"
 date: "09-04-2019"
 pageintro: | 
-   GeoJson and Geospatial Queries Continued
+   GeoJson and Geospatial Queries Continued.
 ---
 
 ### Before this lesson you should:

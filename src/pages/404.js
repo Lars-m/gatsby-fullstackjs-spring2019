@@ -3,10 +3,9 @@ import Layout from "../components/layout";
 
 export default () => (
   <Layout>
-    <h1>Teacher</h1>
-    <h4>Lars Mortensen (lam)</h4>
+    <h1>Page Not Found</h1>
     <p>
-      <a href="mailto:lam@cphbusiness.dk">lam@cphbusiness.dk</a>
+      The requested resource was not found!
     </p>
   </Layout>
 )

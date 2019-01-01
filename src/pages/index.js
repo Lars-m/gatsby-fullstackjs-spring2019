@@ -3,43 +3,24 @@ import { css } from "react-emotion"
 import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
-
-//TODO --> REFACTOR into helpers
-function getDayInWeekFromDkDate(date) {
-  const dp = date.split("-");
-  const dayInWeek = new Date(dp[2], dp[1] - 1, dp[0]).getDay();
-  const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thuersday",
-    "Friday",
-    "Saturday"
-  ];
-  return days[dayInWeek];
-}
-function getDateFromDkDate(date) {
-  const dp = date.split("-");
-  return new Date(dp[2], dp[1] - 1, dp[0]);
-}
-
+import { getDayInWeekFromDkDate, getDateFromDkDate } from "../helpers/date_utils"
 export default ({ data }) => {
   let days = data.allMarkdownRemark.edges.filter(({ node }) => node.fields.belongsToPeriod);
   days = days.map(d=>{
     const node = d.node;    
     const dateForTitle = `${node.frontmatter.date} (${getDayInWeekFromDkDate(node.frontmatter.date)})`
+    console.log("-->",node.fields.belongsToPeriod,node.frontmatter.period)
     return {
       title: `${dateForTitle} - ${node.frontmatter.title}`,
       date: getDateFromDkDate(node.frontmatter.date),
       id: node.id,
       info: node.frontmatter.pageintro,
       slug: node.fields.slug,
-      period: node.fields.belongsToPeriod
+      //period: node.fields.belongsToPeriod
+      period: node.frontmatter.period
     }
   })
   days = days.sort((a, b) => a.date.getTime() - b.date.getTime() );
-  console.log("DAYS",days)
   let period = "";
   return (
     <Layout>
@@ -48,11 +29,13 @@ export default ({ data }) => {
           className={css`
             display: inline-block;
             border-bottom: 1px solid;
+            margin: 0px;
+            color:#295683;
           `}
         >
           Full Semester Schedule
         </h1>
-        <h4>{days.length} Posts</h4>
+        {/* <h4>{days.length} Posts</h4> */}
         {days.map(( day ) => {
           let newPeriod = null;
           if(period !== day.period){
@@ -61,22 +44,26 @@ export default ({ data }) => {
           }
           return(
           <div key={day.id}>
-            {newPeriod && <h2>{day.period}</h2>}
+            {newPeriod && <h3 style={{color:"#295683"}}>{day.period}</h3>}
             <Link
               to={day.slug}
               className={css`
                 text-decoration: none;
                 color: inherit;
+                font-size: small;
               `}
             >
-              <h3 className={css`
-                  margin-bottom: ${rhythm(1 / 4)};
+              <h4 className={css`
+                  margin-bottom: ${rhythm(1 / 5)};
+                  margin-top: ${rhythm(1 / 5)};
+                  
                 `}>
                 {day.title}
                 
-              </h3>
-              <p>{day.info}</p>
-            </Link>
+              </h4>
+              </Link>
+              <p style={{color:"gray"}}>{day.info}</p>
+            
           </div>
         )})}
       </div>
@@ -95,6 +82,7 @@ export const query = graphql`
             title
             date
             pageintro
+            period
           }
           fields {
             slug

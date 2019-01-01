@@ -1,13 +1,13 @@
 ---
-period: "Period-1"
+period: "Flow-1"
 title: "Day-2, Vanilla JavaScript continued, Node, Babel "
 date: "14-02-2019"
 pageintro: |
-   es2015 Promises
+   es2015 Promises.
    
-   es2016 Async/await
+   es2016 Async/await.
    
-   We will use these topics over and over throughout the semester
+   We will use these topics over and over throughout the semester.
 ---
 
 ### Before this lesson you should:

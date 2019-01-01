@@ -1,13 +1,13 @@
 ---
 title: "Express continued"
-period: "Period-2"
+period: "Flow-2"
 date: "12-03-2019"
 pageintro: | 
-   Express Continued
+   Express Continued.
    
-   debug and logging
+   debug and logging.
   
-   REST with node/Express
+   REST with node/Express.
 ---
 
 ### Before this lesson you should:

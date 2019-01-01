@@ -1,11 +1,11 @@
 ---
-period: "Period-1"
+period: "Flow-1"
 title: "Introduction to the Full Stack JavaScript"
 date: "26-02-2019"
 pageintro: | 
-   An introduction to Typescript, a superset of JavaScript
+   An introduction to Typescript, a superset of JavaScript.
 
-   It provides static typing, classes and interfaces and some of the newest ES-next features
+   It provides static typing, classes and interfaces and some of the newest ES-next features.
 ---
 
 ### Before this lesson you should:

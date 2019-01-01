@@ -1,11 +1,9 @@
 ---
-period: "Period-3"
+period: "Flow-3"
 title: "React Native recap"
 date: "11-04-2019"
 pageintro: | 
-   React Native/Expo-recap, speciallly focused on Geolocation and the two components:
-   [Location](https://docs.expo.io/versions/v31.0.0/sdk/location)
-   [MapView](https://docs.expo.io/versions/v31.0.0/sdk/map-view)
+   React Native/Expo-recap, focused on Geolocation and the two components Location and MapView.
 
 ---
 

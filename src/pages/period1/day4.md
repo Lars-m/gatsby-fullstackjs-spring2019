@@ -1,13 +1,13 @@
 ---
-period: "Period-1"
+period: "Flow-1"
 title: "ES-next, Babel, Typescript and WebPack "
 date: "19-02-2019"
 pageintro: |
-  The evolution of JavaScript
+  The evolution of JavaScript.
   es2015, es2016 ... 
-  Webpack
-  Bab
-  TypeScript
+  Webpack.
+  Babel.
+  TypeScript.
 ---
 
 ### Before this lesson you should:

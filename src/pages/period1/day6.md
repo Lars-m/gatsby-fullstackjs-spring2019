@@ -1,9 +1,9 @@
 ---
-period: "Period-1"
+period: "Flow-1"
 title: "Complete exercises for this period"
 date: "28-02-2019"
 pageintro: | 
-   Complete Exercises and exam preparation for this period
+   Complete Exercises and exam preparation for this period.
 ---
 
 

@@ -1,15 +1,15 @@
 ---
 title: "Testing JavaScript backend-code"
-period: "Period-2"
+period: "Flow-2"
 date: "14-03-2019"
 pageintro: | 
-   JavaScript Testing
+   JavaScript Testing.
    
-   JavaScript Backend Testing using Mocha
+   JavaScript Backend Testing using Mocha.
  
-   Testing asynchronous code
+   Testing asynchronous code.
  
-   Mocking with JavaScript
+   Mocking with JavaScript.
 ---
 
 ### Before this lesson you should:
