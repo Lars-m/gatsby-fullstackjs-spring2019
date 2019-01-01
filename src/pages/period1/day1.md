@@ -9,7 +9,7 @@ pageintro: |
    
    An introduction to Node.JS.
    
-   Scope, Hoisting, Closures, this, Prototyping, etc.
+   Scope, Hoisting, Closures, this, Prototyping, etc
    
    Basic asynchronous programming with JavaScript.
 ---
