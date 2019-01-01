@@ -44,14 +44,12 @@ body {
 
 .title {
   color:white;display: flex;align-items: flex-start;
-  
 }
 
 .title img{
    width: 80px;
    margin:6px;
    align-self: flex-start;
-
   }
 
 
@@ -151,6 +149,22 @@ a[href*="http"]:after {
    }
  .title h1{
     font-size: 1.6em;
+    margin-bottom: 0px;
+ }
+}
+
+@media screen and (max-width: 450px) {
+  .main-links {
+    font-size: small;
+  }
+  .title img{
+    width: 55px;
+    margin-right:0px;
+    align-self: flex-start;
+ 
+   }
+ .title h1{
+    font-size: 1.4em;
     margin-bottom: 0px;
  }
 }
