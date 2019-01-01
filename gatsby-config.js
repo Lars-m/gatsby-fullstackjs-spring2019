@@ -1,44 +1,41 @@
 module.exports = {
   siteMetadata: {
     title1: `Full Stack JavaScript`,
-    title2: `Spring 2019`,
-    
+    title2: `Spring 2019`
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`,
-      },
+        path: `${__dirname}/src/`
+      }
     },
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-prismjs`,
-        ]
+        plugins: [`gatsby-remark-prismjs`]
       }
     },
     //`gatsby-plugin-typography`,{
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
+        pathToConfigModule: `src/utils/typography`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-        {
-          resolve: "gatsby-remark-external-links",
-          options: {
-            target: "_blank",
-            //rel: "nofollow"
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank"
+              //rel: "nofollow"
+            }
           }
-        }
         ]
       }
     },
@@ -53,9 +50,9 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: "src/images/loge.png", // This path is relative to the root of the site.
-      },
-      'gatsby-plugin-offline'
+        icon: "src/images/logo.png" // This path is relative to the root of the site.
+      }
     },
-  ],
-}
+    "gatsby-plugin-offline"
+  ]
+};
