@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 export default () => (
   <Layout>
     <h1>Page Not Found</h1>
-    <p>
+    <p style={{marginTop:30}}>
       The requested resource was not found!
     </p>
   </Layout>

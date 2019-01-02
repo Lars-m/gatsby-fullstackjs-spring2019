@@ -110,8 +110,8 @@ export default ({ children }) => (
             <div className="title">
               <img src={logo} alt="Logo"/>
               <div style={{ alignSelf: "flex-start", marginLeft: "2em" }}>
-                <h1 style={{ marginTop: "0.3em", marginBottom:0 }}>{data.site.siteMetadata.title1}</h1>
-                <p style={{ alignSelf: "flex-end", fontSize:"larger", margin:2  }}>{data.site.siteMetadata.title2}</p>
+                <h1 >{data.site.siteMetadata.title1}</h1>
+                <p >{data.site.siteMetadata.title2}</p>
               </div>
             </div>
             <div className="main-links">
