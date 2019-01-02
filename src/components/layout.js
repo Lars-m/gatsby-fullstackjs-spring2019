@@ -1,7 +1,8 @@
 import React from "react";
 import "react-icons";
 
-import logo from "./bitmap.png";
+//import logo from "./bitmap.png";
+import logo from "../../images/logo.png";
 import { StaticQuery, Link, graphql } from "gatsby";
 
 import "../../images/css/font-awesome.css"

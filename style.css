@@ -48,17 +48,18 @@ body {
 .title h1 {
  margin-top: 0.3em;
  margin-bottom:0px;
+ font-size: 3em;
 }
 
 .title p {
    align-self: flex-end;
-   font-size: larger;
+   font-size: 1.8em;
    margin:2px;
    margin-right:20px;
 }
 
 .title img{
-   width: 80px;
+   width: 120px;
    margin:6px;
    align-self: flex-start;
   }
@@ -138,6 +139,14 @@ a[href*="http"]:after {
   padding-left: 5px;
 }
 
+@media screen and (max-width: 800px) {
+  .title h1{
+    font-size: 1.6em;
+ }
+ .title p {
+  font-size: larger;
+}
+}
 @media screen and (max-width: 600px) {
   .link-days {
     display: block;
@@ -154,7 +163,7 @@ a[href*="http"]:after {
   }
 
   .title img{
-    width: 60px;
+    width: 80px;
     align-self: flex-start;
  
    }
