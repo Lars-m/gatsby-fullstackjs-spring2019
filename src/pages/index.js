@@ -9,7 +9,7 @@ export default ({ data }) => {
   days = days.map(d=>{
     const node = d.node;    
     const dateForTitle = `${node.frontmatter.date} (${getDayInWeekFromDkDate(node.frontmatter.date)})`
-    console.log("-->",node.fields.belongsToPeriod,node.frontmatter.period)
+    //console.log("-->",node.fields.belongsToPeriod,node.frontmatter.period)
     return {
       title: `${dateForTitle} - ${node.frontmatter.title}`,
       date: getDateFromDkDate(node.frontmatter.date),

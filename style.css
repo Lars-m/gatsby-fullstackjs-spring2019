@@ -91,6 +91,15 @@ body {
   padding: 4px;
   margin-left:4px;
 }
+
+.online {
+  font-size: large;
+  color: darkred;
+  margin-left: auto;
+  align-self: center ;
+  height: 1.8em;
+}
+
 .period-links a:active {
   background-color: #295683;
   color: white;

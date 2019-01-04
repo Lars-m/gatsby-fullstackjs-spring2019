@@ -69,7 +69,7 @@ export default ({ data }) => {
           {/* <a href={post.frontmatter.learningGoals}>
             Learning Goals-{periodTitle}
           </a> */}
-          <a href={post.frontmatter.learningGoals} target="_blank">
+          <a href={post.frontmatter.learningGoals} target="_blank" rel="noopener noreferrer">
             <img style={{width:75}} src={goals} alt="Learning Goals-{periodTitle}" />
           </a>
         </div>
