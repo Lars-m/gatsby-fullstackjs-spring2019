@@ -1,6 +1,5 @@
 import React from "react";
-//import "react-icons";
-
+import Modal from "./Modal";
 //import logo from "./bitmap.png";
 import logo from "../../images/logo.png";
 import offline from "../../images/offline.svg";
@@ -8,53 +7,9 @@ import { StaticQuery, Link, graphql } from "gatsby";
 
 import "../../images/css/font-awesome.css";
 import "../../style.css";
-import "../../modalStyle.css";
 import all from "../helpers/periodLinks";
-const linksForAllPeriods = all.linkFacade.getLinksForAllPeriods;
-const setCurrentPeriod = all.linkFacade.setCurrentPeriod;
-const getLinksForCurrentPeriod = all.linkFacade.getLinksForCurrentPeriod;
+const {getLinksForAllPeriods,setCurrentPeriod,getLinksForCurrentPeriod}  = all.linkFacade;
 
-class Modal extends React.Component {
-  constructor(props) {
-    super(props);
-    let visible = this.props.show ? "block" : "hide";
-    this.state = { visible, showModal: false };
-  }
-
-  componentDidMount() {
-    //this.setState({ visible: "block" });
-  }
-
-  close = () => {
-    if (this.props.onClose) {
-      this.props.onClose();
-    }
-  };
-
-  render() {
-    const { header, body } = this.props;
-    return (
-      <div
-        id="myModal"
-        className="modal"
-        style={{ display: `${this.state.visible}` }}
-      >
-        {/*<!-- Modal content --> */}
-        <div className="modal-content">
-          <div className="modal-header" onClick={this.close}>
-            <span onClick={this.close} className="close">
-              &times;
-            </span>
-            <h2>{header}</h2>
-          </div>
-          <div className="modal-body">{body}</div>
-        </div>
-      </div>
-    );
-  }
-}
-
-//Refactor to utils (also used in blog-post)
 function getPeriodfromSlug(slug) {
   //We don't care about index.md files so a minimum of three "/" must be present
   //A slug could be: "/period1/day2/"
@@ -81,8 +36,8 @@ class Container extends React.Component {
     this.setOffline();
   }
 
+  /* Disable outgoing links when off-line */
   clicked = e => {
-    //Disable outgoing links when off-line
     if (this.state.offline && e.target.tagName.toUpperCase() === "A") {
       if (!e.target.getAttribute("href").startsWith("/")) {
         e.preventDefault();
@@ -97,17 +52,15 @@ class Container extends React.Component {
   };
 
   setOffline = () => {
-    const status = !navigator.onLine;
-    console.log("Status", status);
-    this.setState({ offline: status });
+    this.setState({ offline: !navigator.onLine });
   };
 
   render() {
-    console.log("STATE", this.state);
+    //console.log("STATE", this.state);
     const data = this.props;
     {
       //const map = linksForAllPeriods(data.allMarkdownRemark.edges);
-      linksForAllPeriods(data.allMarkdownRemark.edges);
+      getLinksForAllPeriods(data.allMarkdownRemark.edges);
       const subLinks = getLinksForCurrentPeriod();
       const subLinksHTML = subLinks.map((n, index) => {
         const slug = n.node.fields.slug;
@@ -193,7 +146,9 @@ class Container extends React.Component {
               {links}
               {/* HACK to ensure icon is preloaded while online*/}
               <img style={{ width: 1 }} src={offline} alt="dummy" />{" "}
-              {this.state.offline && <img className="online" src={offline} alt="off-line" />}
+              {this.state.offline && (
+                <img className="online" src={offline} alt="off-line" />
+              )}
             </div>
             <div className="link-days">{subLinksHTML}</div>
             <Modal
@@ -213,33 +168,33 @@ class Container extends React.Component {
 
 export default ({ children }) => (
   <StaticQuery
-    query={graphql`
-      {
-        allMarkdownRemark {
-          edges {
-            node {
-              id
-              frontmatter {
-                periodTitle
-                period
-                date
-              }
-              fields {
-                slug
-              }
-            }
+    query={query}
+    render={data => (<Container {...data} children={children} />)}
+  />
+);
+
+var query = graphql`
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            periodTitle
+            period
+            date
           }
-        }
-        site {
-          siteMetadata {
-            title1
-            title2
+          fields {
+            slug
           }
         }
       }
-    `}
-    render={data => {
-      return <Container {...data} children={children} />;
-    }}
-  />
-);
+    }
+    site {
+      siteMetadata {
+        title1
+        title2
+      }
+    }
+  }
+`;

@@ -1,7 +1,7 @@
 ---
-period: "Flow-5"
+period: "Flow 4b"
 title: "GraphQL"
-date: "14-05-2019"
+date: "07-05-2019"
 pageintro: | 
    An introduction to GraphQL
    

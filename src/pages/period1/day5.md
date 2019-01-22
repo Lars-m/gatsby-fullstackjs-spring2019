@@ -1,11 +1,11 @@
 ---
 period: "Flow-1"
-title: "Introduction to the Full Stack JavaScript"
-date: "26-02-2019"
+title: "TypeScript in one day"
+date: "14-02-2019"
 pageintro: | 
    An introduction to Typescript, a superset of JavaScript.
 
-   It provides static typing, classes and interfaces and some of the newest ES-next features.
+   Typescript provides static typing, classes, interfaces and some of the newest ES-next features.
 ---
 
 ### Before this lesson you should:

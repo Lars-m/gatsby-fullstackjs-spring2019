@@ -1,14 +1,12 @@
 ---
 title: "Backend with JavaScript"
 period: "Flow-2"
-date: "05-03-2019"
+date: "26-02-2019"
 pageintro: | 
   An introduction to Express, Mocha MongoDB and Mongoose.
   
-  Using Express.
-  
-  Express Middleware.
-  
+  Using Express. 
+  Express Middleware. 
   Server Side Rendering with Express.
 
 ---

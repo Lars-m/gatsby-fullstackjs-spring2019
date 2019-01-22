@@ -1,7 +1,7 @@
 ---
 title: "An introduction to NoSQL, MongoDB and Mongoose"
 period: "Flow-2"
-date: "19-03-2019"
+date: "12-03-2019"
 pageintro: | 
    A quick intro to NoSQL. We will focus only on document database and more specifically use.
 

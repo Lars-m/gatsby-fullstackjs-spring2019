@@ -1,7 +1,7 @@
 ---
 period: "Flow-1"
 title: "Introduction to the Full Stack JavaScript"
-date: "05-02-2019"
+date: "29-01-2019"
 pageintro: | 
    A short introduction to Full Stack JavaScript.
 

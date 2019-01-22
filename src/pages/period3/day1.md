@@ -1,7 +1,7 @@
 ---
 period: "Flow-3"
 title: "Geo-location and GeoJSON"
-date: "02-04-2019"
+date: "26-03-2019"
 pageintro: | 
    A quick introduction to Geo-location and GeoJSON. 
 

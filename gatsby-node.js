@@ -5,7 +5,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` });
-    
+    //console.log("SLUG ",slug)
     const parts = slug.split("/");
 
     createNodeField({
@@ -60,59 +60,38 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        
+        let template = "`./src/templates/blog-post.js`"; //fallback
+        if (node.fields.isPeriodDescription){
+          template = `./src/templates/period-description-page.js`
+        }
+        else if (node.fields.belongsToPeriod){
+          template = `./src/templates/blog-post.js`
+        }
+        else if(node.fields.belongsToPeriod){
+          template = "`./src/templates/blog-post.js`";
+        }
+        
         if (node.fields.isSinglePageDocument) {
-          //console.log("IS_SINGLE_PAGE")
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/templates/single-page.js`),
             context: {
-              // Data passed to context is available
-              // in page queries as GraphQL variables.
+              // Data passed to context is available in page queries as GraphQL variables.
               slug: node.fields.slug,
               isSinglePageDocument:node.fields.isSinglePageDocument
             }
           });
-          //resolve();
         } 
-        else if (node.fields.isPeriodDescription) {
-          //console.log("IS_PERIOD_DESCRIPTION")
+        else  {
           createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/templates/period-description-page.js`),
-            context: {
-              // Data passed to context is available
-              // in page queries as GraphQL variables.
-              slug: node.fields.slug,
-              
+            component: path.resolve(template),
+            context: {// Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug,      
             }
           });
-          //resolve();
         } 
-        else if (node.fields.belongsToPeriod) {
-          //console.log("IS_BELONGS_TO_PERIOD")
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve(`./src/templates/blog-post.js`),
-            context: {
-              // Data passed to context is available
-              // in page queries as GraphQL variables.
-              slug: node.fields.slug,
-              belongsToPeriod: node.fields.belongsToPeriod
-            }
-          });
-          //resolve();
-        } 
-        else {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve(`./src/templates/blog-post.js`),
-            context: {
-              // Data passed to context is available
-              // in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        }
       });
       resolve();
     });

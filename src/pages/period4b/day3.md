@@ -1,10 +1,10 @@
 ---
-period: "Flow-5"
-title: "GraphQL"
-date: "23-05-2019"
+period: "Flow 4b"
+title: "GraphQL and Apollo"
+date: "14-05-2019"
 pageintro: | 
    
-   Observe : No teacher present today
+   TBD
 ---
 
 ### Before this lesson you should:

@@ -1,9 +1,10 @@
 ---
-period: "Flow-5"
-title: "GraphQL and Apollo"
-date: "21-05-2019"
+period: "Flow 4a"
+title: "Progressive Web Apps continued"
+date: "30-04-2019"
 pageintro: | 
-   GraphQL Client side with Apollo
+   
+   TBD
 ---
 
 ### Before this lesson you should:

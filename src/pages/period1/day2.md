@@ -1,7 +1,7 @@
 ---
 period: "Flow-1"
 title: "Day-2, Vanilla JavaScript continued, Node, Babel "
-date: "12-02-2019"
+date: "31-01-2019"
 pageintro: |
    Vanilla JavaScript Continued
 

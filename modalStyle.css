@@ -23,9 +23,9 @@
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.8s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.8s
 }
 
 /* Add Animation */
@@ -38,6 +38,7 @@
   from {center:-300px; opacity:0}
   to {top:0; opacity:1}
 }
+
 
 /* The Close Button */
 .close {
@@ -64,7 +65,7 @@
   padding: 1em;
   text-align: center;
   vertical-align: center;
-  min-height: 200px;
+  min-height: 180px;
 }
 
 .modal-footer {
