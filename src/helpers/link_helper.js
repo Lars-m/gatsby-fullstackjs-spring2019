@@ -44,6 +44,7 @@ export default function createLinkPage(startTag,endTag,title,useLineBreaks){
       <Layout>
         <h2>{title}</h2>
         <div>
+          <p style={{fontStyle:"italic"}}>Don't count on information more more than 1-2 lessons into the future since content most likely will change</p>
           <table>
             <tbody>
               {days.map(d => (

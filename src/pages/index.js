@@ -63,6 +63,9 @@ export default ({ data }) => {
         >
           Full Semester Schedule
         </h1>
+        <p style={{marginTop:8, fontStyle:"italic"}}>
+        Don't count on information more more than 1-2 lessons into the future, 
+        since content most likely will change</p>
         {/* <h4>{days.length} Posts</h4> */}
         {daysAsLinks}
       </div>
