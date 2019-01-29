@@ -8,7 +8,7 @@ import { StaticQuery, Link, graphql } from "gatsby";
 import "../../images/css/font-awesome.css";
 import "../../style.css";
 import all from "../helpers/periodLinks";
-const {getLinksForAllPeriods,setCurrentPeriod,getLinksForCurrentPeriod}  = all.linkFacade;
+const { getLinksForAllPeriods, setCurrentPeriod, getLinksForCurrentPeriod } = all.linkFacade;
 
 function getPeriodfromSlug(slug) {
   //We don't care about index.md files so a minimum of three "/" must be present
@@ -124,6 +124,11 @@ class Container extends React.Component {
               </div>
             </div>
             <div className="main-links">
+              <a href="https://docs.google.com/document/d/1JeVxni4WxM2Kli7Nu68uioooiq4PnYOEeb1ZzMyQvsk/edit?usp=sharing" 
+                 activeClassName="active"
+                 target="_blank">
+                Snippet
+              </a>
               <Link to={`/`} activeClassName="active">
                 Schedule
               </Link>
@@ -131,7 +136,7 @@ class Container extends React.Component {
                 Exercises
               </Link>
               <Link to={`/all-readings`} activeClassName="active">
-                Read/watch
+                Read
               </Link>
               <Link to={`/about/`} activeClassName="active">
                 About
