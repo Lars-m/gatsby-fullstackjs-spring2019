@@ -18,9 +18,15 @@ pageintro: |
 - Read this article  [6 Reasons Why JavaScript’s Async/Await Blows Promises Away (20 min.)](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
 <!--readings_end-->
 
-**Exercises:** 
+### Exercises
 <!--exercises_begin-->
 - [Exercises - Promises (1+2)](https://docs.google.com/document/d/1jpqmitlHKeIcWzDdbe-jO281xFQiGywP3c2iKCDeffQ/edit?usp=sharing)
 - [Exercises - async-await (1+2+3)](https://docs.google.com/document/d/1uE22QlBGuWRWCB8PqR0fteRygiwfv4V0nZ5lhAq-r0k/edit?usp=sharing)
  <!--exercises_end-->
+
+ ### Code samples for today lecture
+ [Samples use during todays lecture](https://github.com/fulsstackJS-Fall2018/Period-1/tree/master/code)
+
+
+
 

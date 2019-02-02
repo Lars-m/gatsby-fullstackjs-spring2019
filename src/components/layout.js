@@ -24,6 +24,7 @@ class Container extends React.Component {
   }
 
   componentDidMount() {
+    console.log("MOUNTING")
     window.addEventListener("click", this.clicked);
     window.addEventListener("online", this.setOffline);
     window.addEventListener("offline", this.setOffline);
