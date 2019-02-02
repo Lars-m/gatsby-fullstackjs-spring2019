@@ -27,6 +27,8 @@ pageintro: |
  ### Code samples for today lecture
  [Samples use during todays lecture](https://github.com/fulsstackJS-Fall2018/Period-1/tree/master/code)
 
+#### Slides
+[Promises and async/await](http://slides.mydemos.dk/promises/promises.html#1)
 
 
 
