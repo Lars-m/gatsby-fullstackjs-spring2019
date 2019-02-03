@@ -1,6 +1,6 @@
 ---
 period: "Flow-1"
-title: "Day-2, Vanilla JavaScript continued, Node, Babel "
+title: "Day-3, Promises and async/await"
 date: "05-02-2019"
 pageintro: |
    es2015 Promises.
