@@ -34,7 +34,6 @@ exports.onServiceWorkerUpdateFound = o => {
   //   window.location.reload(true);
   // }
   //Probably not the right place to do this, but here it is:
-  window.alert("Turn on your debugger")
   if (Notification.permission === "default") {
     Notification.requestPermission().then(function(result) {
       console.log("Attempted to get permission for Notificatioins",result);
@@ -42,7 +41,7 @@ exports.onServiceWorkerUpdateFound = o => {
   }
 };
 exports.onServiceWorkerUpdateReady = o => {
-  console.log("OnServiceWorkerUpdateFound", 0);
+  console.log("OnServiceWorkerUpdateFound", o);
   window.location.reload(true);
   var notification = new Notification("App was updated", {
     body: "Refresh your browser to get new content"
