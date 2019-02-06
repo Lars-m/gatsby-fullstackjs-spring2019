@@ -4,7 +4,7 @@ title: "Progressive Web Apps continued"
 date: "25-04-2019"
 pageintro: | 
    
-   TBD
+   PWA-2, TBD
 ---
 
 ### Before this lesson you should:

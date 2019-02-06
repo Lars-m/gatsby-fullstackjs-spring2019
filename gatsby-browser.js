@@ -31,10 +31,10 @@ exports.onServiceWorkerUpdateFound = (o) => {
   // )
   const answer = true;
   if (answer === true) {
-    window.location.reload()  
+    window.location.reload(true)  
   }
 }
 exports.onServiceWorkerUpdateFound = (o) => {
   console.log("OnServiceWorkerUpdateFound",0);
-  window.location.reload()  ;
+  window.location.reload(true)  ;
 }
