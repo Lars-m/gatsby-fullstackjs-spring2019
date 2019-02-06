@@ -25,25 +25,16 @@
 exports.onServiceWorkerUpdateFound = (o) => {
   console.log("SW",JSON.parse(JSON.stringify(o)))
   console.log("SW2",o)
-  
-  // console.log("Adding listeners",o)
-  
-
-  // self.addEventListener('fetch', function(evt) {
-  //   console.log("EVT",evt.request);
-  //   return evt.request;
-    
-  // });
-  const answer = window.confirm(
-    `This application has been updated. ` +
-      `Reload to display the latest version?`
-  )
-
+  // const answer = window.confirm(
+  //   `This application has been updated. ` +
+  //     `Reload to display the latest version?`
+  // )
+  const answer = true;
   if (answer === true) {
-    window.location.reload()
-
-    
+    window.location.reload()  
   }
-  
-  //window.location.reload()
+}
+exports.onServiceWorkerUpdateFound = (o) => {
+  console.log("OnServiceWorkerUpdateFound",0);
+  window.location.reload()  ;
 }
