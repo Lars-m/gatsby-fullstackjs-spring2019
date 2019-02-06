@@ -34,6 +34,7 @@ exports.onServiceWorkerUpdateFound = o => {
     window.location.reload(true);
   }
   //Probably not the right place to do this, but here it is:
+  window.alert("Turn on your debugger")
   if (Notification.permission === "default") {
     Notification.requestPermission().then(function(result) {
       console.log("Attempted to get permission for Notificatioins",result);
