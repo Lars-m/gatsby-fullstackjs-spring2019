@@ -36,7 +36,7 @@ exports.onServiceWorkerUpdateFound = o => {
   //Probably not the right place to do this, but here it is:
   if ("Notification" in window) {
     var notification = new Notification("App was updated", {
-      body: "Refresh your browser to get new content"
+      body: "Refresh your browser to get the new content"
     });
     setTimeout(function() {
       notification.close();
