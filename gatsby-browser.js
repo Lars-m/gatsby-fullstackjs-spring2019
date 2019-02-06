@@ -30,9 +30,9 @@ exports.onServiceWorkerUpdateFound = o => {
   //     `Reload to display the latest version?`
   // )
   const answer = true;
-  if (answer === true) {
-    window.location.reload(true);
-  }
+  // if (answer === true) {
+  //   window.location.reload(true);
+  // }
   //Probably not the right place to do this, but here it is:
   window.alert("Turn on your debugger")
   if (Notification.permission === "default") {
@@ -41,8 +41,14 @@ exports.onServiceWorkerUpdateFound = o => {
     });
   }
 };
-exports.onServiceWorkerUpdateFound = o => {
+exports.onServiceWorkerUpdateReady = o => {
   console.log("OnServiceWorkerUpdateFound", 0);
+  window.alert("Turn on your debugger")
+  if (Notification.permission === "default") {
+    Notification.requestPermission().then(function(result) {
+      console.log("Attempted to get permission for Notificatioins",result);
+    });
+  }
   window.location.reload(true);
   var notification = new Notification("App was updated", {
     body: "Refresh your browser to get new content"
