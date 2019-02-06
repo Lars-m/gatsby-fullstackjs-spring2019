@@ -37,4 +37,6 @@ exports.onServiceWorkerUpdateFound = (o) => {
 exports.onServiceWorkerUpdateFound = (o) => {
   console.log("OnServiceWorkerUpdateFound",0);
   window.location.reload(true)  ;
+  var notification = new Notification("App was updated", {body: "Refresh your browser to get new content"});
+  //setTimeout(function() {notification.close()}, 1000);
 }
