@@ -22,21 +22,29 @@
 // }
 //exports.routeUpdateListener = l;
 
-exports.onServiceWorkerUpdateFound = (o) => {
-  console.log("SW",JSON.parse(JSON.stringify(o)))
-  console.log("SW2",o)
+exports.onServiceWorkerUpdateFound = o => {
+  console.log("SW", JSON.parse(JSON.stringify(o)));
+  console.log("SW2", o);
   // const answer = window.confirm(
   //   `This application has been updated. ` +
   //     `Reload to display the latest version?`
   // )
   const answer = true;
   if (answer === true) {
-    window.location.reload(true)  
+    window.location.reload(true);
   }
-}
-exports.onServiceWorkerUpdateFound = (o) => {
-  console.log("OnServiceWorkerUpdateFound",0);
-  window.location.reload(true)  ;
-  var notification = new Notification("App was updated", {body: "Refresh your browser to get new content"});
-  //setTimeout(function() {notification.close()}, 1000);
-}
+  //Probably not the right place to do this, but here it is:
+  if (Notification.permission === "default") {
+    Notification.requestPermission().then(function(result) {
+      console.log("Attempted to get permission for Notificatioins",result);
+    });
+  }
+};
+exports.onServiceWorkerUpdateFound = o => {
+  console.log("OnServiceWorkerUpdateFound", 0);
+  window.location.reload(true);
+  var notification = new Notification("App was updated", {
+    body: "Refresh your browser to get new content"
+  });
+  setTimeout(function() {notification.close()}, 4000);
+};
