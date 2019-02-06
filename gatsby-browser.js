@@ -51,6 +51,6 @@ exports.onServiceWorkerUpdateReady = o => {
     });
     setTimeout(function() {
       notification.close();
-    }, 4000);
+    }, 3000);
   }
 };
