@@ -29,10 +29,10 @@ exports.onServiceWorkerUpdateFound = o => {
   //   `This application has been updated. ` +
   //     `Reload to display the latest version?`
   // )
-  const answer = true;
-  if (answer === true) {
-    window.location.reload(true);
-  }
+  // const answer = true;
+  // if (answer === true) {
+  //   window.location.reload(true);
+  // }
   //Probably not the right place to do this, but here it is:
   window.alert("Turn on your debugger")
   if (Notification.permission === "default") {
