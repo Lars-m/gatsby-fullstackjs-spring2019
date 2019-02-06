@@ -34,17 +34,23 @@ exports.onServiceWorkerUpdateFound = o => {
   //   window.location.reload(true);
   // }
   //Probably not the right place to do this, but here it is:
-  if (Notification.permission === "default") {
-    Notification.requestPermission().then(function(result) {
-      console.log("Attempted to get permission for Notificatioins",result);
-    });
+  if ("Notification" in window) {
+    if (Notification.permission === "default") {
+      Notification.requestPermission().then(function(result) {
+        console.log("Attempted to get permission for Notificatioins", result);
+      });
+    }
   }
 };
 exports.onServiceWorkerUpdateReady = o => {
   console.log("OnServiceWorkerUpdateFound", o);
   window.location.reload(true);
-  var notification = new Notification("App was updated", {
-    body: "Refresh your browser to get new content"
-  });
-  setTimeout(function() {notification.close()}, 4000);
+  if ("Notification" in window) {
+    var notification = new Notification("App was updated", {
+      body: "Refresh your browser to get new content"
+    });
+    setTimeout(function() {
+      notification.close();
+    }, 4000);
+  }
 };
