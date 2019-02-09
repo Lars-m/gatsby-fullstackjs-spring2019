@@ -13,9 +13,9 @@ pageintro: |
 ### Before this lesson you should:
 
 <!--readings_begin-->
-- Watch this [javaScript promises explained (Video) (13 min.)](https://www.youtube.com/watch?v=s6SH72uAn3Q) (simple, but introduces most concepts) 1+2
-- Read this article [JavaScript Promises 101 (15 min.)](https://bitsofco.de/javascript-promises-101/). This is what I have used for todays presentation
-- Read this article  [6 Reasons Why JavaScript’s Async/Await Blows Promises Away (20 min.)](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
+- [:tv: javaScript promises explained (13 min.)](https://www.youtube.com/watch?v=s6SH72uAn3Q) (simple, but introduces most concepts) 1+2
+- [:book: JavaScript Promises 101 (15 min.)](https://bitsofco.de/javascript-promises-101/). This is what I have used for todays presentation
+- [:book: 6 Reasons Why JavaScript’s Async/Await Blows Promises Away (20 min.)](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
 <!--readings_end-->
 
 ### Exercises

@@ -1,4 +1,5 @@
 import marked from "marked";
+const emoji = require(`emojione`);
 
 //Changed from this package to return both text and link: https://github.com/tcort/markdown-link-extractor
 export default function markdownLinkExtractor(markdown) {
@@ -15,6 +16,14 @@ export default function markdownLinkExtractor(markdown) {
   marked.InlineLexer.rules.breaks.link = linkWithImageSizeSupport;
   
   renderer.link = function (href, title, text) {
+      if(text.startsWith(":")){
+          //Replace emoji shortname (:smile:  for example, with unicode)
+          const endIndex = text.indexOf(":",1);
+          const code = text.substring(0,endIndex+1);
+          //console.log("CODE",code)
+          text = text.substring(endIndex);
+          text = emoji.shortnameToUnicode(code)+text;
+      }
       links.push({href,text});
   };
   renderer.image = function (href, title, text) {

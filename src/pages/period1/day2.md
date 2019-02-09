@@ -17,9 +17,9 @@ pageintro: |
 ### Before this lesson you should:
 
 <!--readings_begin-->
-* Skim (the whole “book”, it’s short and clear (30 min.)) [Art of node](https://github.com/maxogden/art-of-node) 
-* Watch [Introduction to Node.js (12 min.) ](https://www.youtube.com/watch?v=GJmFG4ffJZU) 
-* NO MATTER WHAT, you MUST WATCH this this fantastic video: [The Event Loop (26 min.)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+* Skim (the whole “book”, it’s short and clear (30 min.)) [:book: Art of node](https://github.com/maxogden/art-of-node) 
+* Watch [:tv: Introduction to Node.js (12 min.) ](https://www.youtube.com/watch?v=GJmFG4ffJZU) 
+* NO MATTER WHAT, you MUST WATCH this this fantastic video: [:tv: The Event Loop (26 min.)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 <!--readings_end-->
 
 **Exercises:** 

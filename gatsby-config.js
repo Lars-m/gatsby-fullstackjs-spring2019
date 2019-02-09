@@ -35,6 +35,12 @@ module.exports = {
               target: "_blank"
               //rel: "nofollow"
             }
+          },
+          {
+            resolve: "gatsby-remark-emoji",
+            options: {
+              size: 24
+            }
           }
         ]
       }

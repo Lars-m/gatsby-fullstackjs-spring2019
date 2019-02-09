@@ -13,11 +13,10 @@ pageintro: |
 ### Before this lesson you should:
 
 <!--readings_begin-->
-- [ES Next Features That'll Make You Dance (25 min.)](https://www.youtube.com/watch?v=9yK4t2CuIHQ)
-- [TypeScript or Babel? (5. min)](https://www.stackchief.com/blog/TypeScript%20or%20Babel%3F)
-- [Babel.io (skim only)](https://babeljs.io/)
-* [Webpack (skim only)](https://webpack.js.org/concepts/)
-* [TypeScript (watch the first 15. minuttes)](https://www.youtube.com/watch?v=0ChtcZmb3dI)
+- [:tv: ES Next Features That'll Make You Dance (25 min.)](https://www.youtube.com/watch?v=9yK4t2CuIHQ)
+- [:book: TypeScript or Babel? (5. min)](https://www.stackchief.com/blog/TypeScript%20or%20Babel%3F)
+- [:book: Babel.io (skim only)](https://babeljs.io/)
+- [:book: Webpack (skim only)](https://webpack.js.org/concepts/)
 <!--readings_end-->
 
 ### Exercises: 
