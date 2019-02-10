@@ -11,7 +11,7 @@ pageintro: |
 ### Before this lesson you should:
 [Setup VS-code for typescript as explained here](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
 <!--readings_begin-->
-- :tv:  [:tv: TypeScript, watch (at least) the first 15. minutes](https://www.youtube.com/watch?v=0ChtcZmb3dI) (If your Danish, it's OK to be just a little bit proud)
+- [:tv: TypeScript, watch (at least) the first 15. minutes](https://www.youtube.com/watch?v=0ChtcZmb3dI) (If your Danish, it's OK to be just a little bit proud)
 -  [:book: TypeScript in 5 minutes](https://www.typescriptlang.org/docs/home.html)
 -  [:book: (Use this handbook as reference for TypeScript)](https://www.typescriptlang.org/docs/home.html)
 
