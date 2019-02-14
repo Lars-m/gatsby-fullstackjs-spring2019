@@ -23,3 +23,4 @@ Setup: (if not already done) [Setup VS-code for typescript as explained here](ht
 <!--exercises_end-->
 
 **Slides:** 
+- [typescript](https://github.com/Lars-m/gatsby-fullstackjs-spring2019)
