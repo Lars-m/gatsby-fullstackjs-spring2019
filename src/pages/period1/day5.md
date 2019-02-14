@@ -23,4 +23,4 @@ pageintro: |
 <!--exercises_end-->
 
 #### Slides: 
-- [typescript](https://github.com/Lars-m/gatsby-fullstackjs-spring2019)
+- [typescript](http://slides.mydemos.dk/typescript/typescript.html#1)
