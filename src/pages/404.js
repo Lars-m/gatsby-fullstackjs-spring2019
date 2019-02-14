@@ -4,8 +4,8 @@ import Layout from "../components/layout";
 export default () => (
   <Layout>
     <h1>Page Not Found</h1>
-    <p>
+    <h3 style={{marginTop:70,color:"darkred"}}>
       The requested resource was not found!
-    </p>
+    </h3>
   </Layout>
 )

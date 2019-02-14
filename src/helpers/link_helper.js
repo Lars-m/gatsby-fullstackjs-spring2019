@@ -10,6 +10,7 @@ export default function createLinkPage(startTag,endTag,title,useLineBreaks){
     let days = data.allMarkdownRemark.edges.filter(
       ({ node }) => node.fields.belongsToPeriod
     );
+    //console.log(days.map(({node})=>node.frontmatter.date))
     days = days.map(d => {
       const node = d.node;
       const dateForTitle = `${node.frontmatter.date}`;
@@ -26,6 +27,7 @@ export default function createLinkPage(startTag,endTag,title,useLineBreaks){
           .map(l => `<a href=${l.href} target="_blank">${l.text}</a>`)
           .join(separator);
       }
+      
       return {
         title: `${dateForTitle} - ${node.frontmatter.title}`,
         date: getDateFromDkDate(node.frontmatter.date),
@@ -42,6 +44,7 @@ export default function createLinkPage(startTag,endTag,title,useLineBreaks){
       <Layout>
         <h2>{title}</h2>
         <div>
+          <p style={{fontStyle:"italic"}}>Don't count on information more more than 1-2 lessons into the future since content most likely will change</p>
           <table>
             <tbody>
               {days.map(d => (

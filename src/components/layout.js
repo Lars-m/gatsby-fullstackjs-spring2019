@@ -1,59 +1,73 @@
 import React from "react";
-import "react-icons";
-
-import logo from "./bitmap.png";
+import Modal from "./Modal";
+//import logo from "./bitmap.png";
+import logo from "../../images/logo.png";
+import offline from "../../images/offline.svg";
 import { StaticQuery, Link, graphql } from "gatsby";
 
-import "../../images/css/font-awesome.css"
+import "../../images/css/font-awesome.css";
 import "../../style.css";
 import all from "../helpers/periodLinks";
-const linksForAllPeriods = all.linkFacade.getLinksForAllPeriods;
-const setCurrentPeriod = all.linkFacade.setCurrentPeriod;
-const getLinksForCurrentPeriod = all.linkFacade.getLinksForCurrentPeriod;
+const { getLinksForAllPeriods, setCurrentPeriod, getLinksForCurrentPeriod } = all.linkFacade;
 
-//Refactor to utils (also used in blog-post)
 function getPeriodfromSlug(slug) {
   //We don't care about index.md files so a minimum of three "/" must be present
   //A slug could be: "/period1/day2/"
   return `${slug.split("/")[1]}`;
 }
 
-export default ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      {
-        allMarkdownRemark {
-          edges {
-            node {
-              id
-              frontmatter {
-                periodTitle
-                period
-                date
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        site {
-          siteMetadata {
-            title1
-            title2
-          }
-        }
+class Container extends React.Component {
+  constructor(props) {
+    super(props);
+    //necessary since first time it executes it's done by node and not in a browser
+    this.state = { offline: false, showModal: false };
+  }
+
+  componentDidMount() {
+    console.log("MOUNTING")
+    window.addEventListener("click", this.clicked);
+    window.addEventListener("online", this.setOffline);
+    window.addEventListener("offline", this.setOffline);
+    this.setOffline();
+  }
+  componentWillUnmount() {
+    window.removeEventListener("online", this.setOffline);
+    window.removeEventListener("offline", this.setOffline);
+    window.removeEventListener("click", this.clicked);
+    this.setOffline();
+  }
+
+  /* Disable outgoing links when off-line */
+  clicked = e => {
+    if (this.state.offline && e.target.tagName.toUpperCase() === "A") {
+      if (!e.target.getAttribute("href").startsWith("/")) {
+        e.preventDefault();
+        this.setState({ showModal: true });
+        setTimeout(() => this.setState({ showModal: false }), 2000);
       }
-    `}
-    render={data => {
-      const map = linksForAllPeriods(data.allMarkdownRemark.edges);
-      //console.log("MAP -->", map);
+    }
+  };
+
+  closeModal = () => {
+    this.setState({ showModal: false });
+  };
+
+  setOffline = () => {
+    this.setState({ offline: !navigator.onLine });
+  };
+
+  render() {
+    //console.log("STATE", this.state);
+    const data = this.props;
+    {
+      //const map = linksForAllPeriods(data.allMarkdownRemark.edges);
+      getLinksForAllPeriods(data.allMarkdownRemark.edges);
       const subLinks = getLinksForCurrentPeriod();
       const subLinksHTML = subLinks.map((n, index) => {
         const slug = n.node.fields.slug;
         //console.log("SLUG--->", slug);
         return (
-          <React.Fragment key={n.id}>
+          <React.Fragment key={index}>
             <Link key={n.id} to={slug} activeClassName="active">
               <span id={getPeriodfromSlug(slug)}>
                 {n.node.frontmatter.date}
@@ -83,8 +97,6 @@ export default ({ children }) => (
           </Link>
         </React.Fragment>
       ));
-      //  const periods = edges.map(e=><Link to = '/{e.node.relativePath}'>{e.node.relativePath}</Link>);
-
       return (
         <div
           //This is "hacky", but it gets the id from the inner span in a-tags
@@ -99,22 +111,25 @@ export default ({ children }) => (
               setCurrentPeriod(e.target.children[0].id);
             } else if (tagName === "SPAN") {
               setCurrentPeriod(e.target.id);
-              //console.log("000000", e.target.innerText, e.target.id);
-            }
-            else{
-              setCurrentPeriod("-")
+            } else {
+              setCurrentPeriod("-");
             }
           }}
         >
           <div className="header">
             <div className="title">
-              <img src={logo} alt="Logo"/>
+              <img src={logo} alt="Logo" />
               <div style={{ alignSelf: "flex-start", marginLeft: "2em" }}>
-                <h1 style={{ marginTop: "0.3em", marginBottom:0 }}>{data.site.siteMetadata.title1}</h1>
-                <p style={{ alignSelf: "flex-end", fontSize:"larger", margin:2  }}>{data.site.siteMetadata.title2}</p>
+                <h1>{data.site.siteMetadata.title1}</h1>
+                <p>{data.site.siteMetadata.title2}</p>
               </div>
             </div>
             <div className="main-links">
+              <a href="https://docs.google.com/document/d/1JeVxni4WxM2Kli7Nu68uioooiq4PnYOEeb1ZzMyQvsk/edit?usp=sharing" 
+                 activeClassName="active"
+                 target="_blank">
+                Snippet
+              </a>
               <Link to={`/`} activeClassName="active">
                 Schedule
               </Link>
@@ -122,7 +137,7 @@ export default ({ children }) => (
                 Exercises
               </Link>
               <Link to={`/all-readings`} activeClassName="active">
-                Read/watch
+                Read
               </Link>
               <Link to={`/about/`} activeClassName="active">
                 About
@@ -130,13 +145,62 @@ export default ({ children }) => (
             </div>
           </div>
 
-          <div style={{ marginLeft: "auto", marginRight: "auto", width: "90%" }}>
-            <div className="period-links">{links}</div>
+          <div
+            style={{ marginLeft: "auto", marginRight: "auto", width: "90%" }}
+          >
+            <div className="period-links">
+              {links}
+              {/* HACK to ensure icon is preloaded while online*/}
+              <img style={{ width: 1 }} src={offline} alt="dummy" />{" "}
+              {this.state.offline && (
+                <img className="online" src={offline} alt="off-line" />
+              )}
+            </div>
             <div className="link-days">{subLinksHTML}</div>
-            <div> {children}</div>
+            <Modal
+              key={this.state.showModal}
+              header="Off-line"
+              body="You are currently off-line"
+              show={this.state.showModal}
+              onClose={this.closeModal}
+            />
+            <div> {this.props.children}</div>
           </div>
         </div>
       );
-    }}
+    }
+  }
+}
+
+export default ({ children }) => (
+  <StaticQuery
+    query={query}
+    render={data => (<Container {...data} children={children} />)}
   />
 );
+
+var query = graphql`
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            periodTitle
+            period
+            date
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        title1
+        title2
+      }
+    }
+  }
+`;

@@ -44,14 +44,24 @@ body {
 
 .title {
   color:white;display: flex;align-items: flex-start;
-  
+}
+.title h1 {
+ margin-top: 0.3em;
+ margin-bottom:0px;
+ font-size: 3em;
+}
+
+.title p {
+   align-self: flex-end;
+   font-size: 1.8em;
+   margin:2px;
+   margin-right:20px;
 }
 
 .title img{
-   width: 80px;
+   width: 120px;
    margin:6px;
    align-self: flex-start;
-
   }
 
 
@@ -63,7 +73,7 @@ body {
 }
 
 .main-links {
-  display:flex;justify-content: flex-end;width:500px;padding:10px;
+  display:flex;justify-content: flex-end;padding:10px;width:500px;
   align-self: flex-end
 }
 
@@ -81,6 +91,15 @@ body {
   padding: 4px;
   margin-left:4px;
 }
+
+.online {
+  font-size: large;
+  color: darkred;
+  margin-left: auto;
+  align-self: center ;
+  height: 1.8em;
+}
+
 .period-links a:active {
   background-color: #295683;
   color: white;
@@ -129,6 +148,14 @@ a[href*="http"]:after {
   padding-left: 5px;
 }
 
+@media screen and (max-width: 800px) {
+  .title h1{
+    font-size: 1.6em;
+ }
+ .title p {
+  font-size: larger;
+}
+}
 @media screen and (max-width: 600px) {
   .link-days {
     display: block;
@@ -145,7 +172,23 @@ a[href*="http"]:after {
   }
 
   .title img{
+    width: 80px;
+    align-self: flex-start;
+ 
+   }
+ .title h1{
+    font-size: 1.6em;
+    margin-bottom: 0px;
+ }
+}
+
+@media screen and (max-width: 400px) {
+  .main-links {
+    font-size: small;
+  }
+  .title img{
     width: 60px;
+    margin-right:0px;
     align-self: flex-start;
  
    }

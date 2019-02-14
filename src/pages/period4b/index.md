@@ -1,6 +1,6 @@
 ---
-period: "Flow5"
-periodTitle: "Flow 5"
+period: "Flow4b"
+periodTitle: "Flow 4b"
 learningGoals: "https://docs.google.com/document/d/1svHB2Dp6aSfST5zaXUtpNyVy9EpO5Wpvts3_YSW934w/edit?usp=sharing"
 ---
 

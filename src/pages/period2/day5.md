@@ -1,11 +1,10 @@
 ---
 title: "Designing a Document Database"
 period: "Flow-2"
-date: "26-03-2019"
+date: "14-03-2019"
 pageintro: | 
    MongoDB Schema Design.
-
-
+   
 ---
 
 ### Before this lesson you should:

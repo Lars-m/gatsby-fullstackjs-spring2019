@@ -1,21 +1,21 @@
 ---
 period: "Flow-1"
-title: "Introduction to the Full Stack JavaScript"
-date: "26-02-2019"
+title: "TypeScript in one day"
+date: "14-02-2019"
 pageintro: | 
    An introduction to Typescript, a superset of JavaScript.
 
-   It provides static typing, classes and interfaces and some of the newest ES-next features.
+   Typescript provides static typing, classes, interfaces and some of the newest ES-next features.
 ---
 
 ### Before this lesson you should:
-Setup: (if not already done) [Setup VS-code for typescript as explained here](https://code.visualstudio.com/docs/languages/typescript)
+[Setup VS-code for typescript as explained here](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
 <!--readings_begin-->
-- [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/home.html)
-- [Learn TypeScript in 30 Minutes (part of the exercises)](https://tutorialzine.com/2016/07/learn-typescript-in-30-minutes)
-- [(Use this handbook as reference for TypeScript)](https://www.typescriptlang.org/docs/home.html)
-<!--readings_end-->
+- [:tv: TypeScript, watch (at least) the first 15. minutes](https://www.youtube.com/watch?v=0ChtcZmb3dI) (If your Danish, it's OK to be just a little bit proud)
+-  [:book: TypeScript in 5 minutes](https://www.typescriptlang.org/docs/home.html)
+-  [:book: (Use this handbook as reference for TypeScript)](https://www.typescriptlang.org/docs/home.html)
 
+<!--readings_end-->
 
 ### Exercises
 <!--exercises_begin-->

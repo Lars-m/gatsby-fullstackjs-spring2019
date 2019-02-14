@@ -31,6 +31,7 @@ function linksFacade() {
   return {
     setCurrentPeriod: current => (currentPeriod = current),
     getLinksForCurrentPeriod: () => {
+      console.log("CURRENT ",currentPeriod)
       if (asMap[currentPeriod]) {
         return asMap[currentPeriod];
       }

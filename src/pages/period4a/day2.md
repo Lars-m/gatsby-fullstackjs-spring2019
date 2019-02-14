@@ -1,9 +1,11 @@
 ---
-period: "Flow-4"
+period: "Flow 4a"
 title: "Progressive Web Apps continued"
-date: "09-05-2019"
+date: "25-04-2019"
 pageintro: | 
    
+   PWA-2, (TBD)
+   ###########
 ---
 
 ### Before this lesson you should:
