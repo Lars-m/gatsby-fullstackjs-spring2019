@@ -22,6 +22,5 @@ pageintro: |
 [TypeScript](https://docs.google.com/document/d/1Lxg0SkcKzBkARM3nzS-82xHZfqgDECJA9blTbIjaJTQ/edit?usp=sharing)
 <!--exercises_end-->
 
-**Slides:** 
-
+#### Slides: 
 - [typescript](https://github.com/Lars-m/gatsby-fullstackjs-spring2019)
