@@ -14,11 +14,11 @@ I don't plan to talk about NoSQL in general, since _Martin Fowler_ does it a lot
 
 Normally I would always recommend a local database for development. Since however, we only have limited time for this topic, I suggest you create a free account on mlab.com as outlined [here](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#Setting_up_the_MongoDB_database), and use this account for all exercises related to MongoDB and Mongoose.
 <!--readings_begin-->
-- [Introduction to NoSQL - Martin Fowler (54 min.)](https://www.youtube.com/watch?v=qI_g07C_Q5I)
-- [What is Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) (one of the exercises for today)
-- [MDN - mongoose tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose) (one of the exercises for today)
+- [:tv: Introduction to NoSQL - Martin Fowler (54 min.)](https://www.youtube.com/watch?v=qI_g07C_Q5I)
+- [:book: What is Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) (one of the exercises for today)
+- [:book: MDN - mongoose tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose) (one of the exercises for today)
 <!--readings_end-->
-- [Skim my idea for a project, meant for demoes for the rest of the semester](https://docs.google.com/document/d/1w0NMC89QG3oRJBLbqG-01jZsRO8IKNxEXOa3Jinwb00/edit?usp=sharing)
+- [:book: Skim my idea for a mini project, meant for the rest of the semester](https://docs.google.com/document/d/15e4a8zho6wdFrBCxYlstGZYlP1wgwjEWM_NYpjcW__0/edit?usp=sharing)
 
 ### Exercises
 <!--exercises_begin-->

@@ -16,14 +16,14 @@ pageintro: |
 
 <!--readings_begin-->
 Lynda.com have a complete Node/Express course with some cool testing videos which I recommend you watch 
-- [Testing with mocha and Chai (8 min.)](https://www.lynda.com/Node-js-tutorials/Testing-mocha-Chai/417077/454472-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
-- [Asynchronous mocha testing (6 min.)](https://www.lynda.com/Node-js-tutorials/Asynchronous-mocha-testing/417077/454473-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
-- [Mocking a server with NOCK (6 min.)](https://www.lynda.com/Node-js-tutorials/Mocking-server-Nock/417077/454474-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
-- [Code Coverage with Istanbul (5 min.)](https://www.lynda.com/Node-js-tutorials/Code-coverage-Istanbul/417077/454478-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+- [:tv: Testing with mocha and Chai (8 min.)](https://www.lynda.com/Node-js-tutorials/Testing-mocha-Chai/417077/454472-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+- [:tv: Asynchronous mocha testing (6 min.)](https://www.lynda.com/Node-js-tutorials/Asynchronous-mocha-testing/417077/454473-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+- [:tv: Mocking a server with NOCK (6 min.)](https://www.lynda.com/Node-js-tutorials/Mocking-server-Nock/417077/454474-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+- [:tv: Code Coverage with Istanbul (5 min.)](https://www.lynda.com/Node-js-tutorials/Code-coverage-Istanbul/417077/454478-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aNode.js+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
 
 As usual, the API descriptions should be your main resource for Mocha/Chai-questions.
--	[Mocha-API] (http://mochajs.org/ )
-- [Chai-API](http://chaijs.com/api/bdd/#method_throw)
+-	[:book: Mocha-API (Skim only)](http://mochajs.org/ )
+- [:book: Chai-API (Skim only)](http://chaijs.com/api/bdd/#method_throw)
 <!--readings_end-->
 
 ### Exercises

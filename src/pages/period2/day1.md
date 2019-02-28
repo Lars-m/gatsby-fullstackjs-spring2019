@@ -16,8 +16,8 @@ pageintro: |
 <!--readings_begin-->
 Read/skim these articles:
 - [:book: Express/Node introduction (25-30 min.)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
-- Skim the [:book: Express Website (15 min.)](https://expressjs.com/en/starter/installing.html), especially the getting started pages 
-- Skim [:book: Express Production best practices (15 min.)](https://expressjs.com/en/advanced/best-practice-performance.html)
+- [:book: Express Website (Skim - 15 min.)](https://expressjs.com/en/starter/installing.html), especially the getting started pages 
+- [:book: Express Production best practices (Skim 15 min.)](https://expressjs.com/en/advanced/best-practice-performance.html)
 - [:book: Mini Project for the rest of the semester](https://docs.google.com/document/d/15e4a8zho6wdFrBCxYlstGZYlP1wgwjEWM_NYpjcW__0/edit?usp=sharing)
 <!--readings_end-->
 

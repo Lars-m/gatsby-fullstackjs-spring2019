@@ -9,8 +9,8 @@ pageintro: |
 
 ### Before this lesson you should:
 <!--readings_begin-->
-- [Data Modeling Introduction (15 min.)](https://docs.mongodb.com/manual/core/data-modeling-introduction/)
-- SKIM part1-2 and READ part-3 in [6 Rules of Thumb for MongoDB Schema Design (30 min.)](https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1)
+- [:book: Data Modeling Introduction (15 min.)](https://docs.mongodb.com/manual/core/data-modeling-introduction/)
+- [:book: 6 Rules of Thumb for MongoDB Schema Design (30 min.)](https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1) (SKIM part 1-2 and READ part-3)
 <!--readings_end-->
 
 ### Exercises
