@@ -13,8 +13,8 @@ pageintro: |
 ### Before this lesson you should:
 
 <!--readings_begin-->
-- Watch/skim[:tv: this key-note speech (15-20 min.)](http://expressjs.com/)
-- Read/skim[:book: Error handling with node (20 min.)](https://strongloop.com/strongblog/robust-node-applications-error-handling/)
+- [:book: opinionated, but interesting article about the story of React (15 min.))](https://thefullstack.xyz/history-express-javascript-framework/)
+- [:book: Error handling with node (20 min.) (Read/skim)](https://strongloop.com/strongblog/robust-node-applications-error-handling/)
 - [:book: Express middleware (10 min.)](https://expressjs.com/en/guide/using-middleware.html)  and/or [:tv: middleware (8 min.)](https://www.youtube.com/watch?v=9HOem0amlyg)
 <!--readings_end-->
 
