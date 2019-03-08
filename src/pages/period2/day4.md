@@ -10,23 +10,31 @@ pageintro: |
 ---
 
 ### Before this lesson you should:
-I don't plan to talk about NoSQL in general, since _Martin Fowler_ does it a lot better than me. Watch the video given below, either before or afther the lesson. It covers all "general learning goals" related to NoSQL
+In order to get a general understanding about NoSQL I recommend that you watch the two videos given in the Read/Watch-section.
 
-Normally I would always recommend a local database for development. Since however, we only have limited time for this topic, I suggest you create a free account on mlab.com as outlined [here](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#Setting_up_the_MongoDB_database), and use this account for all exercises related to MongoDB and Mongoose.
+The first, and simplest by Maximilian from Academind, provides a quick overview of traditional relational databases compared to Document Databases like MongoDB. If you know your SQL (as you should) you can skip the first 10 minutes and jump right to the NoSQL-part.
+
+The second, and longest, gives a very good general introduction to NoSQL Database, why they were invented, and their Pros & Cons.
+I don't plan to talk about NoSQL in general, since _Martin Fowler_ does it a lot better than me. Watch the video , either before or after (or both ;-) the lesson. It covers all "general learning goals" related to NoSQL
+
+**Important:** Normally I would recommend a local database for development. Since however, we only have limited time for this topic, I suggest you create a cloud version of MongoDB from [Atlas, as described here](https://docs.atlas.mongodb.com/getting-started/), BUT SEE hints below first. Use this account for _all exercises_ related to MongoDB and Mongoose. 
+- When you get to **step 5** in the getting started guide, enter this value for IP Whitelist: `0.0.0.0/0` to simplify matters (DON'T EVER DO THIS FOR A PRODUCTION DB, and make sure you understand why)
+- When you get to part-6, select: *"Connect Your Application"*, :arrow_right: on the next window select `Node.js" and` newest version" for your driver. On the same window, select *Connection String Only" to get a string ready to paste into our code (when you have replaced the values for user, and password with what you have created).
+
+**Make sure you have done this BEFORE the lesson**
+
+### Read/Watch
 <!--readings_begin-->
+- [:tv: SQL vs NoSQL (15. min, if you skip the parts you should already know)](https://www.youtube.com/watch?v=ZS_kXvOeQ5Y)
 - [:tv: Introduction to NoSQL - Martin Fowler (54 min.)](https://www.youtube.com/watch?v=qI_g07C_Q5I)
-- [:book: What is Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) (one of the exercises for today)
-- [:book: MDN - mongoose tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose) (one of the exercises for today)
+- [:book: Mongoose Documentation (skim only, BUT BOOKMARK (10-20 min.))](https://mongoosejs.com/docs/guide.html)
 <!--readings_end-->
 - [:book: Skim my idea for a mini project, meant for the rest of the semester](https://docs.google.com/document/d/15e4a8zho6wdFrBCxYlstGZYlP1wgwjEWM_NYpjcW__0/edit?usp=sharing)
 
 ### Exercises
 <!--exercises_begin-->
- [What is Mongoose (tutorial)](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications)
- 
- *The following is part of a larger tutorial, related to Express. Complete part 3 of this tutorial only (feel free to complete all of it, that will provide you with a great example for the exam)*
- 
- [Express Tutorial Part 3 (ONLY): Using a Database (with Mongoose)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#Mongoose_primer)
+ - [Getting Started with mongoose](https://mongoosejs.com/docs/index.html)
+ - [Mongoose Crud Tutorial](https://vegibit.com/mongoose-crud-tutorial/) **READ THIS BEFORE YOU START**: _This tutorial assumes you have installed MongoDB locally, but just use your connection string to you Cloud-Database. It also assumes you have installed a local Mongo Client Compass (similar to Workbench for MySQL), but I suggest you just use the UI-environment provided in the cloud by Atlas._
 <!--exercises_end-->
 
 ### Slides
