@@ -34,7 +34,7 @@ I don't plan to talk about NoSQL in general, since _Martin Fowler_ does it a lot
 ### Exercises
 <!--exercises_begin-->
  - [Getting Started with mongoose](https://mongoosejs.com/docs/index.html)
- - [Mongoose Crud Tutorial](https://vegibit.com/mongoose-crud-tutorial/) **READ THIS BEFORE YOU START**: _This tutorial assumes you have installed MongoDB locally, but just use your connection string to you Cloud-Database. It also assumes you have installed a local Mongo Client Compass (similar to Workbench for MySQL), but I suggest you just use the UI-environment provided in the cloud by Atlas._
+ - [Mongoose Crud Tutorial](https://vegibit.com/mongoose-crud-tutorial/) **READ THIS BEFORE YOU START**: This tutorial assumes you have installed MongoDB locally, but use the [start code provided here](https://github.com/fullstackjavascriptcode/crudMongooseStartCode) to get a quick start, using your account on *MongoDB Atlas* (it also sets up sample data for the queries suggested by the tutorial). The tutorial assumes you have installed a local Mongo Client *Compass* (similar to Workbench for MySQL), but I suggest you just use the UI-environment provided in the cloud by Atlas.
 <!--exercises_end-->
 
 ### Slides
