@@ -8,9 +8,9 @@ pageintro: |
 
 ### Before this lesson you should:
 <!--readings_begin-->
-- [Quick guide to MongoDB Geospatial Queries (15 min.)](http://thecodebarbarian.com/80-20-guide-to-mongodb-geospatial-queries)
-- [Using GeoJson with mongoose (15 min.)](https://mongoosejs.com/docs/geojson.html) (links to the document above)
-- Skim only [GeoSpatial Queries](https://docs.mongodb.com/manual/geospatial-queries/#geospatial-indexes) (The official MongoDB documentation)
+- [:book: Quick guide to MongoDB Geospatial Queries (15 min.)](http://thecodebarbarian.com/80-20-guide-to-mongodb-geospatial-queries)
+- [:book: Using GeoJson with mongoose (15 min.)](https://mongoosejs.com/docs/geojson.html) (links to the document above)
+- [:book: GeoSpatial Queries (skim)](https://docs.mongodb.com/manual/geospatial-queries/#geospatial-indexes) (The official MongoDB documentation)
 <!--readings_end-->
 
 

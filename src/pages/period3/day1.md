@@ -10,8 +10,8 @@ pageintro: |
 
 ### Before this lesson you should
 <!--readings_begin-->
-- [More than you ever wanted to know about GeoJSON (20 min.)](https://macwright.org/2015/03/23/geojson-second-bite)
-- Skim the sections in: [Geospatial Queries in MongoDB (15-20 min.)](https://docs.mongodb.com/manual/geospatial-queries/)
+- [:book: More than you ever wanted to know about GeoJSON (20 min.)](https://macwright.org/2015/03/23/geojson-second-bite)
+- [:book: Geospatial Queries in MongoDB (15-20 min.)-skim to see what you can do](https://docs.mongodb.com/manual/geospatial-queries/)
 <!--readings_end-->
 
 
