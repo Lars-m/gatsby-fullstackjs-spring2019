@@ -1,7 +1,7 @@
 ---
 period: "Flow-3"
 title: "Hand-in info"
-date: "17-04-2019"
+date: "22-04-2019"
 pageintro: | 
    Hand-in info for this period (THIS IS NOT A LECTURE  ).
 ---
@@ -12,4 +12,6 @@ What you have to hand in is (remember, you can/should do this in groups (max 2))
  - YELLOW/RED: [Mini Project - React Native Client](https://docs.google.com/document/d/1rePwGnH53JpAnjctJV6ew-x43HA96W-8R0dnIIqvCcc/edit?usp=sharing)
 - Links to your hosted Backend + App
 
-TBD
+### When to hand-in: No later than Monday 22nd. 12.00
+
+[Hand-in link](https://docs.google.com/spreadsheets/d/1EhpkTUzs8vEHtYslFAIDrC_0asMIXJT36jUy6oOkwVs/edit?usp=sharing)
