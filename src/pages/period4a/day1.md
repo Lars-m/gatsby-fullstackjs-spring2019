@@ -4,8 +4,9 @@ title: "Progressive Web Apps"
 date: "11-04-2019"
 pageintro: | 
 
-
   Progressive Web Apps (PWA)
+
+  What is a PWA, Introduction to Service Workers and Caching
 
  ####****#####
 ---

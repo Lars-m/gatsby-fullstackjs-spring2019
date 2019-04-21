@@ -5,6 +5,8 @@ date: "30-04-2019"
 pageintro: | 
    
    PWA-3 Continued
+
+   Offline capabilities, (responsive design), Push Notifications
    
 ---
 
