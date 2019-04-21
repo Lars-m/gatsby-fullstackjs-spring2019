@@ -70,7 +70,8 @@ export default ({ data }) => {
             Learning Goals-{periodTitle}
           </a> */}
           <a href={post.frontmatter.learningGoals} target="_blank" rel="noopener noreferrer">
-            <img style={{width:75}} src={goals} alt="Learning Goals-{periodTitle}" />
+            <img style={{width:75,float:"left"}} src={goals} alt="Learning Goals-{periodTitle}" />
+            <p style={{color:"wheat"}}>Learning Goals-{periodTitle}</p>
           </a>
         </div>
         {links.length > 0 && (

@@ -6,7 +6,7 @@ pageintro: |
    
    PWA-3 Continued
 
-   Offline capabilities, (responsive design), Push Notifications
+   Offline capabilities, (Responsive design), Push Notifications
    
 ---
 
