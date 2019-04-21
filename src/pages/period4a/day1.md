@@ -26,7 +26,12 @@ What I will do (no later than Friday) is to come up with the learning goals for 
 
 If you need more info about this strategy, it will be given tomorrow. If not, just go ahead. You can do it all from back home since it all is in this tutorial.
 
+### Read/Watch
+<!--readings_begin-->
+[:tv: :book: (marked day1)](https://docs.google.com/document/d/1mXlHfPuUUq5OolL1IOy2ODp3JnKA654FiK9Tptybs1g/edit?usp=sharing)
+<!--readings_end-->
+
 ### Exercises
 <!--exercises_begin-->
- [PWA-day1](https://docs.google.com/document/d/1mXlHfPuUUq5OolL1IOy2ODp3JnKA654FiK9Tptybs1g/edit?usp=sharing)
+ [PWA (exercises marked day1)](https://docs.google.com/document/d/1mXlHfPuUUq5OolL1IOy2ODp3JnKA654FiK9Tptybs1g/edit?usp=sharing)
 <!--exercises_end-->
