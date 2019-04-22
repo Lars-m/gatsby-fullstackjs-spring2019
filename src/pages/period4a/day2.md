@@ -5,7 +5,7 @@ date: "25-04-2019"
 pageintro: | 
    
    PWA Continued
-   Using Lighthouse (Audits in Chrome). IndexDB, using Workbox
+   Using Lighthouse (Audits in Chrome Dev-tools). IndexDB, (using Workbox)
    
 ---
 
