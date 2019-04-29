@@ -14,4 +14,6 @@ What you have to hand in is (remember, you can/should do this in groups (max 2))
 
 ### When to hand-in: No later than Monday 22nd. 12.00
 
-[Hand-in link](https://docs.google.com/spreadsheets/d/1EhpkTUzs8vEHtYslFAIDrC_0asMIXJT36jUy6oOkwVs/edit?usp=sharing)
+[Hand-in link (No longer active)](#)
+<!--
+[Hand-in link](https://docs.google.com/spreadsheets/d/1EhpkTUzs8vEHtYslFAIDrC_0asMIXJT36jUy6oOkwVs/edit?usp=sharing)-->
