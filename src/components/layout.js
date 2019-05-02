@@ -24,7 +24,7 @@ class Container extends React.Component {
   }
 
   componentDidMount() {
-    console.log("MOUNTING")
+    
     window.addEventListener("click", this.clicked);
     window.addEventListener("online", this.setOffline);
     window.addEventListener("offline", this.setOffline);
@@ -130,12 +130,16 @@ class Container extends React.Component {
                  target="_blank">
                 Snippet
               </a>
+              <a href="https://studypoints.dk" target="_blank" activeClassName="active">
+                SP
+              </a>
               <Link to={`/`} activeClassName="active">
                 Schedule
               </Link>
               <Link to={`/all-links`} activeClassName="active">
-                Exercises
+                Ex
               </Link>
+              
               <Link to={`/all-readings`} activeClassName="active">
                 Read
               </Link>

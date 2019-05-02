@@ -1,11 +1,9 @@
 ---
 period: "Flow 4 Complete"
-title: "Mini-Project"
+title: "Complete P4-hand-in"
 date: "23-05-2019"
 pageintro: | 
-  Complete the mini project
+   Complete either the PWA-tasks or the GraphQL part of the mini project
 ---
 
-## NO Teacher present in this week
-
-Complete either the PWA-client for the mini-project OR the Apollo Frontend
+## Observe :arrow_right: NO Teacher present in this week

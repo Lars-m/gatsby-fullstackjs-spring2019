@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import all from "../helpers/periodLinks";
 import goals from "../../images/goals.png";
 
+
 const periodLinks = all.periodLinks;
 
 function getDayInWeekFromDkDate(date) {
@@ -15,7 +16,7 @@ function getDayInWeekFromDkDate(date) {
     "Monday",
     "Tuesday",
     "Wednesday",
-    "Thuersday",
+    "Thursday",
     "Friday",
     "Saturday"
   ];
@@ -69,10 +70,11 @@ export default ({ data }) => {
           {/* <a href={post.frontmatter.learningGoals}>
             Learning Goals-{periodTitle}
           </a> */}
-          <a href={post.frontmatter.learningGoals} target="_blank" rel="noopener noreferrer">
+         {post.frontmatter.learningGoals && (<a href={post.frontmatter.learningGoals} target="_blank" rel="noopener noreferrer">
             <img style={{width:75,float:"left"}} src={goals} alt="Learning Goals-{periodTitle}" />
             <p style={{color:"wheat"}}>Learning Goals-{periodTitle}</p>
-          </a>
+         </a>)}
+         {!post.frontmatter.learningGoals && (<br/>)}
         </div>
         {links.length > 0 && (
           <table>

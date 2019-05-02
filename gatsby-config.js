@@ -25,6 +25,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`
       }
     },
+    
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -35,6 +36,15 @@ module.exports = {
               target: "_blank"
               //rel: "nofollow"
             }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 100
+            },
           },
           {
             resolve: "gatsby-remark-emoji",

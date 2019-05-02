@@ -41,3 +41,5 @@ You must earn at least 80% (= 80 points) to be approved for the exam, and you mu
 
 [Check your status here](https://studypoints.dk)
 
+
+
