@@ -143,7 +143,7 @@ class Container extends React.Component {
               <Link to={`/all-readings`} activeClassName="active">
                 Read
               </Link>
-              <Link to={`/about/`} activeClassName="active">
+              <Link to={`/`} activeClassName="active">
                 About
               </Link>
             </div>
