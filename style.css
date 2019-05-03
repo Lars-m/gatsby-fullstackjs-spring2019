@@ -5,19 +5,18 @@ body {
 }
 
 .header a:visited {
-  color : white;
+  color: white;
 }
 
 .header a:active {
-  background-color:cadetblue;
+  background-color: cadetblue;
   color: white;
   border-radius: 4px;
   padding: 4px;
 }
 
 .header a:link {
-  color : white;
- 
+  color: white;
 }
 .header a {
   display: inline;
@@ -28,11 +27,15 @@ body {
 }
 
 .header {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color:#295683;
+  background-color: #295683;
   /*padding:6px;*/
+}
+
+.content-frame {
+   margin-left: auto; margin-right: auto; width: 90% 
 }
 
 /* a {
@@ -43,27 +46,28 @@ body {
 } */
 
 .title {
-  color:white;display: flex;align-items: flex-start;
+  color: white;
+  display: flex;
+  align-items: flex-start;
 }
 .title h1 {
- margin-top: 0.3em;
- margin-bottom:0px;
- font-size: 3em;
+  margin-top: 0.3em;
+  margin-bottom: 0px;
+  font-size: 3em;
 }
 
 .title p {
-   align-self: flex-end;
-   font-size: 1.8em;
-   margin:2px;
-   margin-right:20px;
+  align-self: flex-end;
+  font-size: 1.8em;
+  margin: 2px;
+  margin-right: 20px;
 }
 
-.title img{
-   width: 120px;
-   margin:6px;
-   align-self: flex-start;
-  }
-
+.title img {
+  width: 120px;
+  margin: 6px;
+  align-self: flex-start;
+}
 
 .active {
   background-color: cadetblue;
@@ -73,15 +77,18 @@ body {
 }
 
 .main-links {
-  display:flex;justify-content: flex-end;padding:10px;width:500px;
-  align-self: flex-end
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  width: 500px;
+  align-self: flex-end;
 }
 
 .period-links {
-  padding-top:15px;
-  height:55px;
-  display:flex;
-  flex-direction:row;
+  padding-top: 15px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
 }
 
@@ -89,21 +96,21 @@ body {
   font-style: normal;
   font-size: larger;
   padding: 4px;
-  margin-left:4px;
+  margin-left: 4px;
 }
 
 .online {
   font-size: large;
   color: darkred;
   margin-left: auto;
-  align-self: center ;
+  align-self: center;
   height: 1.8em;
 }
 
 .period-links a:active {
   background-color: #295683;
   color: white;
-  border-radius: 3px; 
+  border-radius: 3px;
 }
 
 .link-days {
@@ -143,58 +150,80 @@ body {
 } */
 
 a[href*="http"]:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   content: "\f08e";
   padding-left: 5px;
   font-size: small;
 }
 
-@media screen and (max-width: 800px) {
-  .title h1{
+@media screen and (max-width: 900px) {
+  .title h1 {
     font-size: 1.6em;
+  }
+  .content-frame {
+    margin-left: auto; margin-right: auto; width: 95% 
  }
- .title p {
-  font-size: larger;
+  .title img {
+    width: 80px;
+  }
+  .title p {
+    font-size: larger;
+  }
 }
-}
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 700px) {
   .link-days {
     display: block;
   }
   .header {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
   .main-links {
-    display: flex;align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .period-info {
     display: none;
   }
 
-  .title img{
+  .title img {
     width: 80px;
     align-self: flex-start;
- 
-   }
- .title h1{
+  }
+  .title h1 {
     font-size: 1.6em;
     margin-bottom: 0px;
- }
+  }
 }
 
-@media screen and (max-width: 400px) {
-  .main-links {
+@media screen and (max-width: 500px) {
+  .title img {
+    width: 60px;
+    margin-right: 0px;
+    align-self: flex-start;
+  }
+  .link-days {
     font-size: small;
   }
-  .title img{
-    width: 60px;
-    margin-right:0px;
-    align-self: flex-start;
- 
-   }
- .title h1{
+  .content-frame {
+    margin-left: auto; margin-right: auto; width: 99% 
+ }
+  .period-links {
+    font-size: small;
+  }
+  .main-links {
+    font-size: small;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    align-self: flex-end;
+  }
+  .title h1 {
     font-size: 1.6em;
     margin-bottom: 0px;
- }
+  }
 }

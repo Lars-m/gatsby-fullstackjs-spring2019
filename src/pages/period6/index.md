@@ -1,5 +1,5 @@
 ---
-period: "XX"
+period: "LastDays"
 periodTitle: "Flow 4 (last days)"
 ---
 

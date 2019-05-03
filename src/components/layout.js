@@ -131,13 +131,13 @@ class Container extends React.Component {
                 Snippet
               </a>
               <a href="https://studypoints.dk" target="_blank" activeClassName="active">
-                SP
+                StudyPoints
               </a>
               <Link to={`/`} activeClassName="active">
                 Schedule
               </Link>
               <Link to={`/all-links`} activeClassName="active">
-                Ex
+                Exercises
               </Link>
               
               <Link to={`/all-readings`} activeClassName="active">
@@ -149,9 +149,7 @@ class Container extends React.Component {
             </div>
           </div>
 
-          <div
-            style={{ marginLeft: "auto", marginRight: "auto", width: "90%" }}
-          >
+          <div className="content-frame" >
             <div className="period-links">
               {links}
               {/* HACK to ensure icon is preloaded while online*/}
