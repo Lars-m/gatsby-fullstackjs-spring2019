@@ -12,7 +12,7 @@ pageintro: |
 
 ### Before this lesson you should:
 <!--readings_begin-->
-- :book: Skim this tutorial [How to GraphQL (15 min.)]( https://www.howtographql.com/)
+- :book: First part of this tutorial [How to GraphQL (42 min.)]( https://www.howtographql.com/) (Skip the Advanced part, we are doing this as in the tutorial below)
 - :tv: Watch and CODE ALONG this GREAT [tutorial (90 min)](https://www.lynda.com/GraphQL-tutorials/GraphQL-Essential-Training/614315-2.html) (It will give you all most everything you need to design the miniproject GraphQL backend)
 <!--readings_end-->
 
