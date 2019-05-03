@@ -133,7 +133,7 @@ class Container extends React.Component {
               <a href="https://studypoints.dk" target="_blank" activeClassName="active">
                 StudyPoints
               </a>
-              <Link to={`/`} activeClassName="active">
+              <Link to={`/full-schedule`} activeClassName="active">
                 Schedule
               </Link>
               <Link to={`/all-links`} activeClassName="active">
