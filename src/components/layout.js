@@ -139,7 +139,6 @@ class Container extends React.Component {
               <Link to={`/all-links`} activeClassName="active">
                 Exercises
               </Link>
-              
               <Link to={`/all-readings`} activeClassName="active">
                 Read
               </Link>
