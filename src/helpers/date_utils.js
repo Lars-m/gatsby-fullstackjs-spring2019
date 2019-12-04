@@ -14,6 +14,8 @@ function getDayInWeekFromDkDate(date) {
   return days[dayInWeek];
 }
 
+
+
 function getDateFromDkDate(date) {
   const dp = date.split("-");
   return new Date(dp[2], dp[1] - 1, dp[0]);
